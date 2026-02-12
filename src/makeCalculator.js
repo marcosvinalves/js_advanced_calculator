@@ -1,39 +1,39 @@
 'use strict';
 
 function makeCalculator() {
-  const object = {
+  const calculator = {
     result: 0,
 
     operate(callback, number) {
       callback(number);
 
-      return object;
+      return calculator;
     },
 
     reset() {
-      object.result = 0;
+      calculator.result = 0;
 
-      return object;
+      return calculator;
     },
 
     add(number) {
-      object.result += number;
+      calculator.result += number;
     },
 
     subtract(number) {
-      object.result -= number;
+      calculator.result -= number;
     },
 
     multiply(number) {
-      object.result *= number;
+      calculator.result *= number;
     },
 
     divide(number) {
-      object.result /= number;
+      calculator.result /= number;
     },
   };
 
-  return object;
+  return calculator;
 }
 
 module.exports = makeCalculator;
